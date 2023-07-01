@@ -1,24 +1,38 @@
 # Scientific-data Format
 
-## Installing
+## Creating a New Article
 
-*TODO*: Replace the `<github-organization>` with your GitHub organization.
+To create a new article using this format:
 
 ```bash
-quarto use template <github-organization>/scientific-data
+quarto use template christopherkenny/scientific-data
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your article.
+This will create a new directory with an example document that uses this format.
 
-## Using
+## Using with an Existing Document
 
-*TODO*: Describe how to use your format.
+To add this format to an existing document:
+
+```bash
+quarto add christopherkenny/scientific-data
+```
+
+Then, add the format to your document options:
+
+```yaml
+format:
+  scientific-data-pdf: default
+```    
 
 ## Format Options
 
 *TODO*: If your format has options that can be set via document metadata, describe them.
 
-## Example
+### Example
 
-Here is the source code for a minimal sample document: [example.qmd](example.qmd).
+Here is the source code for a minimal sample document: [template.qmd](template.qmd).
+
+<!-- pdftools::pdf_convert('template.pdf',pages = 1) 
+![[template.qmd](template.qmd)](template_1.png) --->
 
