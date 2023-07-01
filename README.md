@@ -23,16 +23,12 @@ Then, add the format to your document options:
 ```yaml
 format:
   scientific-data-pdf: default
-```    
-
-## Format Options
-
-*TODO*: If your format has options that can be set via document metadata, describe them.
+```
 
 ### Example
 
 Here is the source code for a minimal sample document: [template.qmd](template.qmd).
 
-<!-- pdftools::pdf_convert('template.pdf',pages = 1) 
-![[template.qmd](template.qmd)](template_1.png) --->
+<!-- pdftools::pdf_convert('template.pdf',pages = 1)  --->
+![[template.qmd](template.qmd)](template_1.png)
 
